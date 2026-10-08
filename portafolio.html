@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio — Star Perfecta &amp; StarTattoo · Fuenlabrada</title>
+<meta name="description" content="Trabajos reales de Star Perfecta & StarTattoo en Fuenlabrada: tatuajes y uñas.">
+<link rel="icon" href="logo-starperfecta.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Star Perfecta & StarTattoo, inicio">
+    <img src="logo-starperfecta.jpg" alt="" class="logo-badge">
+    <span class="logo-text"><span class="script">Star Perfecta</span><small>&amp; StarTattoo</small></span>
+  </a>
+  <nav id="nav" aria-label="Navegación principal">
+    <ul>
+      <li><a href="index.html#inicio">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="portafolio.html">Portafolio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#opiniones">Opiniones</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Trabajos reales</span>
+  <h1>Portafolio</h1>
+  <p>Una muestra de lo que hacemos cada día en nuestro local de Fuenlabrada. Toca una foto para verla en grande.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="p-tatuajes">Tatuajes</button>
+  <button class="tab-btn" data-tab="p-unas">Uñas</button>
+</div>
+
+<div class="tab-panel active" id="p-tatuajes">
+  <div class="tab-intro">
+    <span class="script">StarTattoo</span>
+    <h2>Tatuajes</h2>
+    <p>Más trabajos en <a href="https://www.instagram.com/startattoo_fuenlabrada/" target="_blank" rel="noopener" style="color:var(--red)">@startattoo_fuenlabrada</a>.</p>
+  </div>
+  <div class="portfolio-grid">
+    <figure><img src="tattoo-aguila.jpg" alt="Tatuaje de águila en la espalda" loading="lazy"></figure>
+    <figure><img src="tattoo-jaguar.jpg" alt="Tatuaje de jaguar con flores en el antebrazo" loading="lazy"></figure>
+    <figure><img src="tattoo-leona.jpg" alt="Tatuaje de leona con flecha" loading="lazy"></figure>
+    <figure><img src="tattoo-leon.jpg" alt="Tatuaje de león en el gemelo" loading="lazy"></figure>
+    <figure><img src="tattoo-columna.jpg" alt="Tatuaje fino de flor de loto en la columna" loading="lazy"></figure>
+    <figure><img src="tattoo-sol-luna.jpg" alt="Tatuaje de sol y luna en el hombro" loading="lazy"></figure>
+    <figure><img src="tattoo-mariposas.jpg" alt="Tatuaje de mariposas y trébol" loading="lazy"></figure>
+  </div>
+</div>
+
+<div class="tab-panel" id="p-unas">
+  <div class="tab-intro">
+    <span class="script">Star Perfecta</span>
+    <h2>Uñas</h2>
+    <p>Más trabajos en <a href="https://www.instagram.com/starperfecta/" target="_blank" rel="noopener" style="color:var(--red)">@starperfecta</a>.</p>
+  </div>
+  <div class="portfolio-grid">
+    <figure><img src="unas-2.jpg" alt="Manicura francesa roja con animal print" loading="lazy"></figure>
+    <figure><img src="unas-4.jpg" alt="Uñas con diseño de vaca y rosa" loading="lazy"></figure>
+    <figure><img src="unas-1.jpg" alt="Uñas almendradas en marrón con efecto dorado" loading="lazy"></figure>
+    <figure><img src="unas-6.jpg" alt="Francesa roja con puntos de leopardo" loading="lazy"></figure>
+    <figure><img src="unas-3.jpg" alt="Uñas en tono berenjena con brillo dorado" loading="lazy"></figure>
+    <figure><img src="unas-5.jpg" alt="Uñas decoradas con ranitas pintadas a mano" loading="lazy"></figure>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox"><img src="" alt=""></div>
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>© 2026 Star Perfecta &amp; StarTattoo · Av. de la Universidad, 2, local 1 · 28942 Fuenlabrada</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner">
+  <p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p>
+  <div class="cookie-actions">
+    <button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button>
+    <button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button>
+  </div>
+</div>
+
+<div class="social-fabs">
+  <a class="ig-fab" href="https://www.instagram.com/startattoo_fuenlabrada/" target="_blank" rel="noopener" aria-label="Visitar Instagram de StarTattoo">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 9.838a3.838 3.838 0 1 1 0-7.676 3.838 3.838 0 0 1 0 7.676zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+  </a>
+  <a class="wa-fab" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20Star%20Perfecta%20%26%20StarTattoo" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="white"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.386.702 4.605 1.912 6.472L4 29l7.727-1.878A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.629 28 15.001 28 8.373 22.629 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.980-1.363l-.357-.212-4.583 1.114 1.15-4.47-.232-.367a9.8 9.8 0 0 1-1.5-5.219c0-5.421 4.412-9.833 9.833-9.833s9.833 4.412 9.833 9.833-4.412 9.833-9.833 9.833zm5.38-7.36c-.294-.148-1.741-.859-2.011-.957-.27-.098-.467-.148-.663.148-.196.294-.76.957-.932 1.153-.172.196-.343.221-.637.074-.294-.148-1.242-.458-2.366-1.462-.874-.78-1.464-1.744-1.636-2.038-.172-.294-.018-.453.13-.6.133-.133.294-.343.441-.515.147-.172.196-.294.294-.49.098-.196.049-.368-.025-.515-.074-.148-.663-1.6-.909-2.19-.24-.575-.484-.497-.663-.506l-.564-.01c-.196 0-.515.074-.784.368-.27.294-1.03 1.007-1.03 2.456s1.055 2.85 1.202 3.046c.147.196 2.077 3.17 5.033 4.445.703.303 1.252.484 1.68.619.706.225 1.348.193 1.855.117.566-.085 1.741-.712 1.987-1.4.245-.688.245-1.278.172-1.4-.074-.123-.27-.196-.564-.344z"/></svg>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

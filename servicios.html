@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Star Perfecta &amp; StarTattoo · Fuenlabrada</title>
+<meta name="description" content="Servicios de Star Perfecta & StarTattoo en Fuenlabrada: microblading, lifting de pestañas, depilación láser, cera e hilo, tratamientos faciales (Dermapen, limpieza de cara) y corporales, masajes, uñas, tatuajes y piercing.">
+<link rel="icon" href="logo-starperfecta.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Star Perfecta & StarTattoo, inicio">
+    <img src="logo-starperfecta.jpg" alt="" class="logo-badge">
+    <span class="logo-text"><span class="script">Star Perfecta</span><small>&amp; StarTattoo</small></span>
+  </a>
+  <nav id="nav" aria-label="Navegación principal">
+    <ul>
+      <li><a href="index.html#inicio">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="portafolio.html">Portafolio</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="index.html#opiniones">Opiniones</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría para que encuentres tu tratamiento en segundos. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="cejas">Cejas y Pestañas</button>
+  <button class="tab-btn" data-tab="depilacion">Depilación</button>
+  <button class="tab-btn" data-tab="facial-corporal">Facial y Corporal</button>
+  <button class="tab-btn" data-tab="masajes">Masajes</button>
+  <button class="tab-btn" data-tab="unas">Uñas</button>
+  <button class="tab-btn" data-tab="tatuajes">Tatuajes y Piercing</button>
+</div>
+
+<!-- CEJAS Y PESTAÑAS -->
+<div class="tab-panel active" id="cejas">
+  <div class="tab-intro">
+    <span class="script">Star Perfecta</span>
+    <h2>Cejas y Pestañas</h2>
+    <p>Una mirada definida y natural: diseñamos tus cejas pelo a pelo y elevamos tus pestañas para que luzcan sin esfuerzo.</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('microblading')">
+      <img src="cejas.jpg" alt="Tratamiento de cejas" loading="lazy">
+      <div class="cat-card-text"><h3>Microblading</h3><span>Ver servicio</span></div>
+    </div>
+    <div class="cat-card" onclick="openModal('pestanas')">
+      <img src="pestanas.jpg" alt="Lifting de pestañas" loading="lazy">
+      <div class="cat-card-text"><h3>Lifting de Pestañas</h3><span>Ver servicio</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- DEPILACIÓN -->
+<div class="tab-panel" id="depilacion">
+  <div class="tab-intro">
+    <span class="script">Star Perfecta</span>
+    <h2>Depilación</h2>
+    <p>Tres técnicas para cada zona y cada piel: láser, cera e hilo.</p>
+  </div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('depilacion')">
+      <img src="depilacion.jpg" alt="Depilación en Star Perfecta" loading="lazy">
+      <div class="cat-card-text"><h3>Láser, Cera e Hilo</h3><span>Ver servicios</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- FACIAL Y CORPORAL -->
+<div class="tab-panel" id="facial-corporal">
+  <div class="tab-intro">
+    <span class="script">Star Perfecta</span>
+    <h2>Facial y Corporal</h2>
+    <p>Tratamientos para cuidar tu piel de la cabeza a los pies, incluido el Dermapen facial.</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('facial')">
+      <img src="facial.jpg" alt="Tratamiento facial" loading="lazy">
+      <div class="cat-card-text"><h3>Tratamientos Faciales</h3><span>Ver servicios</span></div>
+    </div>
+    <div class="cat-card" onclick="openModal('corporal')">
+      <img src="corporal.jpg" alt="Tratamiento corporal" loading="lazy">
+      <div class="cat-card-text"><h3>Tratamientos Corporales</h3><span>Ver servicio</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- MASAJES -->
+<div class="tab-panel" id="masajes">
+  <div class="tab-intro">
+    <span class="script">Star Perfecta</span>
+    <h2>Masajes</h2>
+    <p>Una pausa para soltar tensiones y salir como nueva.</p>
+  </div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('masajes')">
+      <img src="masajes.jpg" alt="Masaje de espalda" loading="lazy">
+      <div class="cat-card-text"><h3>Masajes</h3><span>Ver servicios</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- UÑAS -->
+<div class="tab-panel" id="unas">
+  <div class="tab-intro">
+    <span class="script">Star Perfecta</span>
+    <h2>Uñas</h2>
+    <p>Esmaltado permanente y diseños que se notan: del nude más elegante al nail art más divertido.</p>
+  </div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('unas')">
+      <img src="unas-2.jpg" alt="Manicura realizada en Star Perfecta" loading="lazy" style="object-position:center 40%;">
+      <div class="cat-card-text"><h3>Manicura y Esmaltado</h3><span>Ver servicios</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- TATUAJES Y PIERCING -->
+<div class="tab-panel" id="tatuajes">
+  <div class="tab-intro">
+    <span class="script">StarTattoo</span>
+    <h2>Tatuajes y Piercing</h2>
+    <p>Diseños a medida con un significado especial para ti, y piercing en el mismo estudio.</p>
+  </div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('tatuajes')">
+      <img src="tattoo-leon.jpg" alt="Tatuaje de león realizado en StarTattoo" loading="lazy">
+      <div class="cat-card-text"><h3>Tatuajes</h3><span>Ver servicio</span></div>
+    </div>
+    <div class="cat-card" onclick="openModal('piercing')">
+      <img src="tatuando.jpg" alt="Estudio de tatuaje y piercing" loading="lazy">
+      <div class="cat-card-text"><h3>Piercing</h3><span>Ver servicio</span></div>
+    </div>
+  </div>
+</div>
+
+<p class="services-note">¿No encuentras lo que buscas o quieres saber el precio? Escríbenos por WhatsApp al <a href="https://wa.me/34640215001" target="_blank" rel="noopener" style="color:var(--red)">640 21 50 01</a> y te informamos sin compromiso.</p>
+
+<!-- MODALES -->
+<div class="modal-overlay" id="modal-microblading"><div class="modal">
+  <button class="modal-close" onclick="closeModal('microblading')" aria-label="Cerrar">×</button>
+  <h3>Microblading</h3><p class="modal-sub">Cejas definidas pelo a pelo</p>
+  <div class="svc-row"><div><div class="svc-name">Microblading de cejas</div><span class="svc-desc">Técnica de pigmentación pelo a pelo para dar forma, densidad y definición a tus cejas con un resultado natural.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20microblading" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-pestanas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('pestanas')" aria-label="Cerrar">×</button>
+  <h3>Lifting de Pestañas</h3><p class="modal-sub">Mirada abierta sin máscara</p>
+  <div class="svc-row"><div><div class="svc-name">Lifting de pestañas</div><span class="svc-desc">Eleva y curva tus pestañas naturales desde la raíz para una mirada más abierta durante semanas.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20lifting%20de%20pesta%C3%B1as" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-depilacion"><div class="modal">
+  <button class="modal-close" onclick="closeModal('depilacion')" aria-label="Cerrar">×</button>
+  <h3>Depilación</h3><p class="modal-sub">Láser, cera e hilo</p>
+  <div class="svc-row"><div><div class="svc-name">Depilación láser</div><span class="svc-desc">Reducción progresiva del vello para olvidarte de la cuchilla.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Depilación con cera</div><span class="svc-desc">Piernas, axilas, ingles y más zonas, con un acabado limpio y duradero.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Depilación con hilo</div><span class="svc-desc">Técnica precisa para cejas y rostro, ideal para pieles sensibles.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20depilaci%C3%B3n" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-facial"><div class="modal">
+  <button class="modal-close" onclick="closeModal('facial')" aria-label="Cerrar">×</button>
+  <h3>Tratamientos Faciales</h3><p class="modal-sub">Una piel limpia, luminosa y renovada</p>
+  <div class="svc-row"><div><div class="svc-name">Dermapen facial</div><span class="svc-desc">Microagujas que estimulan la regeneración de la piel para mejorar textura, marcas y luminosidad.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Limpieza de cara</div><span class="svc-desc">Limpieza profunda para purificar los poros y devolver la frescura a tu piel.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Tratamientos faciales</div><span class="svc-desc">Te asesoramos y adaptamos el tratamiento a las necesidades de tu piel.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20faciales" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-corporal"><div class="modal">
+  <button class="modal-close" onclick="closeModal('corporal')" aria-label="Cerrar">×</button>
+  <h3>Tratamientos Corporales</h3><p class="modal-sub">Cuidado para todo tu cuerpo</p>
+  <div class="svc-row"><div><div class="svc-name">Tratamientos corporales</div><span class="svc-desc">Te asesoramos y te recomendamos el tratamiento corporal que mejor se adapta a ti.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20tratamientos%20corporales" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-masajes"><div class="modal">
+  <button class="modal-close" onclick="closeModal('masajes')" aria-label="Cerrar">×</button>
+  <h3>Masajes</h3><p class="modal-sub">Relájate y suelta tensiones</p>
+  <div class="svc-row"><div><div class="svc-name">Masaje de espalda relajante y descontracturante</div><span class="svc-desc">Alivia la tensión acumulada en espalda y cuello.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Otros masajes</div><span class="svc-desc">Pregúntanos y te recomendamos el masaje que necesitas.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20masajes" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-unas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('unas')" aria-label="Cerrar">×</button>
+  <h3>Uñas</h3><p class="modal-sub">Manos perfectas, con o sin diseño</p>
+  <div class="svc-row"><div><div class="svc-name">Esmaltado permanente</div><span class="svc-desc">Color y brillo que aguantan semanas sin desconcharse.</span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Manicura con diseño</div><span class="svc-desc">Francesas, animal print, dibujos a mano… mira nuestro portafolio y elige tu estilo.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20pedir%20cita%20para%20u%C3%B1as" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-tatuajes"><div class="modal">
+  <button class="modal-close" onclick="closeModal('tatuajes')" aria-label="Cerrar">×</button>
+  <h3>Tatuajes</h3><p class="modal-sub">StarTattoo · diseños con significado</p>
+  <div class="svc-row"><div><div class="svc-name">Tatuaje personalizado</div><span class="svc-desc">Cuéntanos tu idea y la convertimos en un diseño único para ti: desde piezas pequeñas y finas hasta trabajos grandes con sombreado.</span></div><div class="svc-price">Presupuesto</div></div>
+  <a class="modal-cta" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20pedir%20presupuesto%20para%20un%20tatuaje" target="_blank" rel="noopener">Pedir presupuesto</a>
+  <a class="modal-cta alt" href="https://www.instagram.com/startattoo_fuenlabrada/" target="_blank" rel="noopener" style="background:var(--dark)">Ver @startattoo_fuenlabrada</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-piercing"><div class="modal">
+  <button class="modal-close" onclick="closeModal('piercing')" aria-label="Cerrar">×</button>
+  <h3>Piercing</h3><p class="modal-sub">StarTattoo · piercing</p>
+  <div class="svc-row"><div><div class="svc-name">Piercing</div><span class="svc-desc">Pregúntanos por la zona que quieres perforar y te asesoramos.</span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta" href="https://starperfecta-startattoo.reservio.com" target="_blank" rel="noopener">Reservar cita</a>
+  <a class="modal-cta alt" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20piercing" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</div></div>
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>© 2026 Star Perfecta &amp; StarTattoo · Av. de la Universidad, 2, local 1 · 28942 Fuenlabrada</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner">
+  <p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p>
+  <div class="cookie-actions">
+    <button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button>
+    <button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button>
+  </div>
+</div>
+
+<div class="social-fabs">
+  <a class="ig-fab" href="https://www.instagram.com/starperfecta/" target="_blank" rel="noopener" aria-label="Visitar Instagram">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6 6 0 1 0 0 12 6 6 0 0 0 0-12zm0 9.838a3.838 3.838 0 1 1 0-7.676 3.838 3.838 0 0 1 0 7.676zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+  </a>
+  <a class="wa-fab" href="https://wa.me/34640215001?text=Hola%2C%20quiero%20reservar%20una%20cita%20en%20Star%20Perfecta%20%26%20StarTattoo" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 32 32" fill="white"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.386.702 4.605 1.912 6.472L4 29l7.727-1.878A11.94 11.94 0 0 0 16.001 27C22.629 27 28 21.629 28 15.001 28 8.373 22.629 3 16.001 3zm0 21.818a9.77 9.77 0 0 1-4.98-1.363l-.357-.212-4.583 1.114 1.15-4.47-.232-.367a9.8 9.8 0 0 1-1.5-5.219c0-5.421 4.412-9.833 9.833-9.833s9.833 4.412 9.833 9.833-4.412 9.833-9.833 9.833zm5.38-7.36c-.294-.148-1.741-.859-2.011-.957-.27-.098-.467-.148-.663.148-.196.294-.76.957-.932 1.153-.172.196-.343.221-.637.074-.294-.148-1.242-.458-2.366-1.462-.874-.78-1.464-1.744-1.636-2.038-.172-.294-.018-.453.13-.6.133-.133.294-.343.441-.515.147-.172.196-.294.294-.49.098-.196.049-.368-.025-.515-.074-.148-.663-1.6-.909-2.19-.24-.575-.484-.497-.663-.506l-.564-.01c-.196 0-.515.074-.784.368-.27.294-1.03 1.007-1.03 2.456s1.055 2.85 1.202 3.046c.147.196 2.077 3.17 5.033 4.445.703.303 1.252.484 1.68.619.706.225 1.348.193 1.855.117.566-.085 1.741-.712 1.987-1.4.245-.688.245-1.278.172-1.4-.074-.123-.27-.196-.564-.344z"/></svg>
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
